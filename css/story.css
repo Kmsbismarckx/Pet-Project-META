@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap");
+.story {
+  width: 1160px;
+  height: 645px;
+  margin-bottom: 120px;
+}
+
+.story h2 {
+  text-align: center;
+}
+
+.story h2 span {
+  color: rgb(168, 168, 168);
+}
+
+.story-main {
+  display: flex;
+}
+
+.story-list {
+  width: 282px;
+}
+
+.story-list__item.active {
+  background-color: rgb(34, 34, 34);
+  color: rgb(141, 253, 27);
+}
+
+.story-list__item.active {
+  display: block;
+}
+
+.story-list__item {
+  display: block;
+  width: 282px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.story-list__item:hover {
+  color: rgb(141, 253, 27);
+}
+
+.story-list__item_description {
+  display: flex;
+  justify-content: left;
+  background-color: rgb(34, 34, 34);
+  width: 818px;
+  height: 478px;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+.story-list__item_description {
+  display: none;
+}
+
+.story-list__item_description.active {
+  display: flex;
+}
+
+.story-list__item_description img {
+  width: 172px;
+  height: 253px;
+  padding-right: 40px;
+}
+
+.story-list__item_description_sidebar {
+  width: 530px;
+}
+
+/*# sourceMappingURL=story.css.map */

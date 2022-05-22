@@ -1,0 +1,21 @@
+.partners {
+  margin-bottom: 245px;
+}
+
+.partners__logoholder {
+  display: grid;
+  grid-template-columns: 322px 322px 322px;
+  grid-row-gap: 61px;
+  grid-column-gap: 86px;
+  margin-left: 52.95px;
+}
+
+.partners_title {
+  font-family: "DM Mono";
+  font-size: 11px;
+  line-height: 12px;
+  margin-bottom: 51px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(141, 253, 27, 1);
+}

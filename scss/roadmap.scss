@@ -1,0 +1,136 @@
+@import "config";
+
+.roadmap {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.roadmap h2 {
+  text-align: center;
+  margin-bottom: 106px;
+}
+
+.roadmap_img {
+  margin-bottom: 118px;
+}
+
+.roadmap-list {
+  margin: 0 auto;
+  display: flex;
+  width: 540px;
+  flex-direction: column;
+}
+
+.roadmap-item {
+  width: 538px;
+  height: 269px;
+  border: 1px solid rgba(141, 253, 27, 1);
+  margin-bottom: 140px;
+  padding-bottom: 30px;
+  background-color: rgba(34, 34, 34, 1);
+  z-index: 111;
+}
+
+.roadmap-item:last-child {
+  margin-bottom: 286px;
+}
+
+.roadmap-item_header {
+  display: flex;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(141, 253, 27, 1);
+  padding-bottom: 12px;
+  margin-bottom: 29px;
+}
+
+.roadmap-item_header p {
+  margin: 0;
+}
+
+.roadmap-item_header .number {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 44px;
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-right: 12px;
+  border: 1px solid rgba(141, 253, 27, 1);
+}
+
+.roadmap-item_header_side {
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.roadmap-item_header_side p:first-child {
+  font-family: "DM Mono";
+  font-size: 8px;
+  line-height: 12px;
+  color: $green;
+}
+
+.roadmap-item_header_side p:last-child {
+  font-family: "DM Mono";
+  font-size: 16px;
+  line-height: 27.73px;
+}
+
+.roadmap-item_description__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-item_description {
+  font-size: 11px;
+}
+
+.roadmap-item_description p {
+  margin-left: 13px;
+  width: 301px;
+}
+
+.roadmap-item_description ul {
+  margin-left: 35px;
+}
+
+.roadmap_img {
+  position: relative;
+  margin-right: 13px;
+  /*align-self: flex-start;*/
+}
+
+.roadmap-svg {
+  position: absolute;
+  width: 671px;
+  height: 671px;
+}
+
+.roadmap-svg_1 {
+  top: 129.5px;
+  left: 24.5px;
+}
+
+.roadmap-svg_2 {
+  top: 1298.5px;
+  left: 24.5px;
+}
+
+.roadmap-svg_3 {
+  top: 598.5px;
+  right: 24.5px;
+}
+
+.roadmap_svg__line__1 {
+  position: absolute;
+  top: 856px;
+  left: 720px;
+}
+
+.roadmap_svg__line__2 {
+  position: absolute;
+  top: 1296px;
+  left: 720px;
+}

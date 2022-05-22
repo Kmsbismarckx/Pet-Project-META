@@ -1,0 +1,40 @@
+.discord__info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 136px;
+  margin-right: 136px;
+}
+
+.discord__join {
+  max-width: 483px;
+  margin-top: 146px;
+}
+
+.discord__join span {
+  color: rgb(141, 253, 27);
+}
+
+.discord__join p {
+  max-width: 345px;
+  margin-bottom: 35px;
+}
+
+.discord__join_img {
+  max-width: 584px;
+}
+
+.discord__join_button {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 43px;
+  background: #8dfd1b;
+}
+
+.discord__join_button .discord {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=discord-info.css.map */

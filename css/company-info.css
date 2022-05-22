@@ -1,0 +1,39 @@
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 121px;
+}
+
+.company-info__item {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  margin-top: 128px;
+  margin-left: 72px;
+}
+
+.company-info__item h1 {
+  margin-bottom: 43px;
+}
+
+.company-info__item p {
+  max-width: 340px;
+  margin-bottom: 115px;
+}
+
+.company-info__img {
+  max-width: 865px;
+}
+
+.company-info__button {
+  display: table;
+  width: 205px;
+  height: 60px;
+  background-color: #8dfd1b;
+  color: black;
+  text-align: center;
+  line-height: 60px;
+}
+
+/*# sourceMappingURL=company-info.css.map */

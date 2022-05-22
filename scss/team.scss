@@ -1,0 +1,35 @@
+.team {
+  margin-bottom: 235.86px;
+}
+
+.team .running-str {
+  margin-bottom: 120px;
+}
+
+.team__people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-column-gap: 100px;
+  grid-row-gap: 60px;
+  margin-left: 139px;
+  text-align: center;
+}
+
+.team__people_item {
+  width: 320px;
+}
+
+.team__people_name {
+  font-family: "DM Mono";
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 27.73px;
+}
+
+.team__people_role {
+  font-family: "DM Mono";
+  font-size: 12px;
+  line-height: 11px;
+  color: rgba(141, 253, 27, 1);
+  text-transform: uppercase;
+}

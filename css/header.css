@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 86px;
+  padding-bottom: 14px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.header .header__logo {
+  margin-right: 40px;
+}
+
+.navigation-item {
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header .header__navigation a {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.header .header__navigation a:last-child {
+  margin-right: 0;
+}
+
+.header .society__links {
+  margin-left: auto;
+}
+
+.society__links .society {
+  margin-right: 12px;
+}
+
+.society__links .society:last-child {
+  margin-right: 0;
+}
+
+.twitter {
+  background: white url("../img/twitter.png") no-repeat 50%;
+}
+
+.discord {
+  background: white url("../img/discord.png") no-repeat 50%;
+}
+
+.youtube {
+  background: white url("../img/youtube.png") no-repeat 50%;
+}
+
+.telegram {
+  background: white url("../img/telegram.png") no-repeat 50%;
+}
+
+.linked_in {
+  background: white url("../img/linked_in.png") no-repeat 50%;
+}
+
+/**/
+
+/*# sourceMappingURL=header.css.map */

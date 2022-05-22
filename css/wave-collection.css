@@ -1,0 +1,45 @@
+.wave-collection {
+  display: flex;
+  margin-bottom: 113px;
+}
+
+.wave-collection__item {
+  margin-left: 40px;
+}
+
+.wave-collection__item h2 {
+  width: 351px;
+  margin: 0;
+  margin-left: 106px;
+  margin-bottom: 42px;
+}
+
+.wave-collection__item h2 span {
+  color: rgb(168, 168, 168);
+}
+
+.wave-collection__description {
+  max-width: 551px;
+  margin-left: 161px;
+}
+
+.blockquote {
+  font-family: "DM Mono";
+  font-size: 21px;
+  line-height: 32px;
+  color: rgb(141, 253, 27);
+  padding-left: 22px;
+  margin: 0;
+  border-left: 2px solid rgb(141, 253, 27);
+}
+
+.wave-collection .wave-collection__button {
+  display: table;
+  text-align: center;
+  line-height: 42px;
+  width: 244px;
+  height: 40px;
+  border: 1px solid rgb(141, 253, 27);
+}
+
+/*# sourceMappingURL=wave-collection.css.map */

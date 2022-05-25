@@ -26,6 +26,10 @@
     display: none;
   }
 
+  .wave-collection__item .wave_item {
+    margin-right: 0;
+  }
+
   .story .story-list__item_description {
     max-height: 538px;
     overflow: hidden;
@@ -62,6 +66,117 @@
 @media (max-width: 767px) {
   .container {
     max-width: none;
+  }
+
+  .company-info {
+    flex-direction: column;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+  .header .society__links {
+    display: none;
+  }
+
+  .wave-collection {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wave-collection__item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .wave-collection__item .wave_item {
+    align-self: center;
+  }
+
+  .wave_item img {
+    width: 100%;
+  }
+
+  .story-list__item_description {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+  .story-list__item_description img {
+    margin-bottom: 10px;
+  }
+
+  .running-str .wrapper {
+    animation: none;
+  }
+  .running-str .wrapper div {
+    text-align: center;
+  }
+
+  .people {
+    margin-left: 0;
+  }
+
+  .questions .questions__left-side {
+    flex-direction: column;
+    align-items: center;
+  }
+  .questions img {
+    max-width: 360px;
+  }
+
+  .roadmap .roadmap-list {
+    align-items: center;
+    max-width: 540px;
+  }
+  .roadmap .roadmap-list .roadmap-svg {
+    max-width: 100%;
+  }
+  .roadmap .roadmap-list .roadmap-item {
+    width: 100%;
+    align-self: center;
+  }
+  .roadmap .roadmap-list .roadmap-item .roadmap-item_description p {
+    max-width: 301px;
+  }
+
+  .questions .questions__list {
+    max-width: 100%;
+  }
+  .questions .questions__list .questions__list_header {
+    max-width: 100%;
+  }
+
+  .team {
+    margin-bottom: 30px;
+  }
+
+  .discord__info {
+    flex-direction: column;
+    align-items: center;
+    .discord__join_button-align-self: center;
+  }
+  .discord__info .discord__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .discord__info .discord__join p {
+    align-self: center;
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 10px;
+  }
+  .footer .footer__col_2,
+.footer .footer__col_3,
+.footer .footer__col_5 {
+    display: none;
   }
 }
 

@@ -1,9 +1,5 @@
 @import "config";
 
-.roadmap {
-  position: relative;
-}
-
 .roadmap h2 {
   text-align: center;
   margin-bottom: 106px;
@@ -19,15 +15,16 @@
 }
 
 .roadmap-list {
+  position: relative;
   margin: 0 auto;
   display: flex;
-  width: 540px;
+  max-width: 540px;
   flex-direction: column;
 }
 
 .roadmap-item {
   width: 538px;
-  height: 269px;
+  min-height: 269px;
   border: 1px solid rgba(141, 253, 27, 1);
   margin-bottom: 140px;
   padding-bottom: 30px;
@@ -101,7 +98,7 @@
 
 .roadmap-item_description p {
   margin-left: 13px;
-  width: 301px;
+  max-width: 301px;
 }
 
 .roadmap-item_description ul {
@@ -109,42 +106,27 @@
 }
 
 .roadmap_img {
-  position: relative;
   margin-right: 13px;
-  /*align-self: flex-start;*/
 }
-
+// TODO: настроить круги ебаные
 .roadmap-svg {
+  display: none;
   position: absolute;
   max-width: 671px;
-  width: 100%;
   max-height: 671px;
-  height: 100%;
 }
 
 .roadmap-svg_1 {
-  top: 129.5px;
-  left: 24.5px;
+  top: 0;
+  left: 0;
 }
 
 .roadmap-svg_2 {
   bottom: 0;
-  left: 24.5px;
+  left: 0;
 }
 
 .roadmap-svg_3 {
-  top: 598.5px;
-  right: 24.5px;
-}
-
-.roadmap_svg__line__1 {
-  position: absolute;
-  top: 856px;
-  left: 720px;
-}
-
-.roadmap_svg__line__2 {
-  position: absolute;
-  top: 1296px;
-  left: 720px;
+  top: 0;
+  right: 0;
 }

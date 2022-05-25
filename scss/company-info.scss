@@ -8,8 +8,8 @@
   max-width: 580px;
   display: flex;
   flex-direction: column;
+  align-self: center;
   word-wrap: break-word;
-  margin-top: 128px;
   margin-left: 72px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .company-info__img {
-  max-width: 865px;
+  align-self: center;
 }
 
 .company-info__button {

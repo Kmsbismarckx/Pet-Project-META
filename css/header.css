@@ -2,10 +2,17 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  max-width: 1440px;
   height: 86px;
   padding-bottom: 14px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: 9.75%;
+  padding-right: 9.75%;
+}
+.header .society__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .header .header__logo {
@@ -44,19 +51,19 @@
 }
 
 .discord {
-  background: white url("../img/discord.png") no-repeat 50%;
+  background: white url("/img/discord.png") no-repeat 50%;
 }
 
 .youtube {
-  background: white url("../img/youtube.png") no-repeat 50%;
+  background: white url("/img/youtube.png") no-repeat 50%;
 }
 
 .telegram {
-  background: white url("../img/telegram.png") no-repeat 50%;
+  background: white url("/img/telegram.png") no-repeat 50%;
 }
 
 .linked_in {
-  background: white url("../img/linked_in.png") no-repeat 50%;
+  background: white url("/img/linked_in.png") no-repeat 50%;
 }
 
 /**/

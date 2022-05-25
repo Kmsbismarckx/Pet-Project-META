@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap");
 .roadmap {
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .roadmap h2 {
@@ -11,7 +9,12 @@
 }
 
 .roadmap_img {
+  width: 100%;
   margin-bottom: 118px;
+}
+
+.roadmap_img img {
+  width: 100%;
 }
 
 .roadmap-list {
@@ -31,6 +34,11 @@
   z-index: 111;
 }
 
+.roadmap__item_img {
+  align-self: center;
+  margin-right: 13px;
+}
+
 .roadmap-item:last-child {
   margin-bottom: 286px;
 }
@@ -45,6 +53,10 @@
 
 .roadmap-item_header p {
   margin: 0;
+}
+
+.roadmap .number.completed {
+  background-color: rgb(141, 253, 27);
 }
 
 .roadmap-item_header .number {
@@ -103,8 +115,10 @@
 
 .roadmap-svg {
   position: absolute;
-  width: 671px;
-  height: 671px;
+  max-width: 671px;
+  width: 100%;
+  max-height: 671px;
+  height: 100%;
 }
 
 .roadmap-svg_1 {
@@ -113,7 +127,7 @@
 }
 
 .roadmap-svg_2 {
-  top: 1298.5px;
+  bottom: 0;
   left: 24.5px;
 }
 

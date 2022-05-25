@@ -1,0 +1,66 @@
+@media (max-width: 1440px) {
+  .company-info img {
+    width: 100%;
+  }
+  .discord__info img {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .header {
+    padding-bottom: 0;
+    height: 100px;
+    align-items: center;
+    .society {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+  .wrapper__item div:first-child {
+    display: none;
+  }
+
+  .story {
+    .story-list__item_description {
+      max-height: 538px;
+      overflow: hidden;
+    }
+    .story-list__item_description_sidebar {
+      overflow: scroll;
+    }
+  }
+
+  .partners__logoholder {
+    margin-left: 0;
+  }
+
+  .questions {
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 0;
+    .questions__list {
+      align-self: center;
+    }
+    .questions__left-side {
+      flex-direction: row;
+      align-self: center;
+      max-width: 100%;
+      margin-bottom: 10px;
+      .questions_img {
+        width: 100%;
+      }
+      h2 {
+        align-self: center;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}

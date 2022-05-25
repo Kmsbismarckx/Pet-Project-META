@@ -2,28 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" scale="1.0" />
     <title>Meta</title>
-    <link rel="stylesheet" href="css/config.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/wave-collection.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="css/story.css">
-    <link rel="stylesheet" href="css/roadmap.css">
-    <link rel="stylesheet" href="css/questions.css">
-    <link rel="stylesheet" href="css/people.css">
-    <link rel="stylesheet" href="css/partners.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/discord-info.css"/>
-    <link rel="stylesheet" href="css/artists-running-str.css">
-    <link rel="stylesheet" href="css/company-info.css">
+
+    <link rel="stylesheet" href="css/config.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/wave-collection.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/story.css" />
+    <link rel="stylesheet" href="css/roadmap.css" />
+    <link rel="stylesheet" href="css/questions.css" />
+    <link rel="stylesheet" href="css/people.css" />
+    <link rel="stylesheet" href="css/partners.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/discord-info.css" />
+    <link rel="stylesheet" href="css/artists-running-str.css" />
+    <link rel="stylesheet" href="css/company-info.css" />
+    <link rel="stylesheet" href="css/adaptive.css" />
   </head>
   <body>
     <div class="container">
       <div class="header">
         <img
-          class="header__logo meta-logo"
+          class="header__item header__logo meta-logo"
           src="img/meta_logo.png"
           alt="Meta"
         />
@@ -89,25 +91,25 @@
               your access to our industry experts, established artists, and
               partners.
             </blockquote>
+            <div class="wave-collection__text">
+              <p>
+                Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet
+                dictum sit amet justo. Tortor aliquam nulla facilisi cras.
+              </p>
 
-            <p>
-              Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet
-              dictum sit amet justo. Tortor aliquam nulla facilisi cras.
-            </p>
+              <p>
+                Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur
+                adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed
+                felis. Aenean vel elit scelerisque mauris pellentesque pulvinar.
+                Et malesuada fames ac turpis egestas sed tempus. Enim sit amet
+                venenatis urna cursus eget.
+              </p>
 
-            <p>
-              Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur
-              adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed
-              felis. Aenean vel elit scelerisque mauris pellentesque pulvinar.
-              Et malesuada fames ac turpis egestas sed tempus. Enim sit amet
-              venenatis urna cursus eget.
-            </p>
-
-            <p>
-              Maecenas ultricies mi eget mauris pharetra et ultrices. A
-              condimentum vitae sapien pellentesque habitant morbi.
-            </p>
-
+              <p>
+                Maecenas ultricies mi eget mauris pharetra et ultrices. A
+                condimentum vitae sapien pellentesque habitant morbi.
+              </p>
+            </div>
             <a href="#" class="button wave-collection__button">
               Get one on OpenSea
             </a>
@@ -167,13 +169,13 @@
           <div class="story-main">
             <div class="story-list">
               <button class="story-list__item story-list__item_1 active">
-                Our founders
+                <p>Our founders</p>
               </button>
               <button class="story-list__item story-list__item_2">
-                Partners
+                <p>Partners</p>
               </button>
               <button class="story-list__item story-list__item_3">
-                The future
+                <p>The future</p>
               </button>
             </div>
             <div class="story-list__item_description active">
@@ -345,7 +347,7 @@
           <div class="roadmap-list">
             <div class="roadmap-item roadmap-item_1">
               <div class="roadmap-item_header">
-                <p class="number">1</p>
+                <p class="number completed">1</p>
                 <div class="roadmap-item_header_side">
                   <p>Phase 1 - completed</p>
                   <p>Spring 2022 - pre launch</p>
@@ -364,7 +366,7 @@
                   </p>
                 </div>
 
-                <div class="roadmap_img">
+                <div class="roadmap__item_img">
                   <img src="img/roadmap_wave_item_1.png" alt="" />
                 </div>
               </div>
@@ -394,7 +396,7 @@
                   </p>
                 </div>
 
-                <div class="roadmap_img">
+                <div class="roadmap__item_img">
                   <img src="img/roadmap_wave_item_2.png" alt="" />
                 </div>
               </div>
@@ -422,7 +424,7 @@
                   </p>
                 </div>
 
-                <div class="roadmap_img">
+                <div class="roadmap__item_img">
                   <img src="img/roadmap_wave_item_3.png" alt="" />
                 </div>
               </div>
@@ -469,60 +471,74 @@
         <!-- partners PART-->
         <!-- questions PART-->
         <div class="questions">
-          <div class="questions_left-side">
+          <div class="questions__left-side">
             <h2>Frequently <span>asked</span> questions</h2>
             <img class="questions_img" src="img/questions_img.png" alt="" />
           </div>
-          <dl class="questions_list">
-            <dt>
-              How can I get into Meta RL?
+          <div class="questions__list">
+            <div class="questions__list_header">
+              <label for="checkbox_1">How can I get into Meta RL?</label>
               <input
-                class="questions_list__checkbox"
+                id="checkbox_1"
+                class="questions__list_checkbox"
                 type="checkbox"
                 name="checkbox"
                 value=""
               />
-            </dt>
-            <dd>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </dd>
+            </div>
+            <div class="questions__list_footer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
 
-            <dt>
-              When is the NFT launch?<input
-                class="questions_list__checkbox"
+            <div class="questions__list_header">
+              <label for="checkbox_2">When is the NFT launch?</label>
+              <input
+                id="checkbox_2"
+                class="questions__list_checkbox"
                 type="checkbox"
                 name="checkbox"
                 value=""
               />
-            </dt>
-            <dd>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </dd>
+            </div>
+            <div class="questions__list_footer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
 
-            <dt>
-              Where can I get a WAVE NFT?<input
-                class="questions_list__checkbox"
+            <div class="questions__list_header">
+              <label for="checkbox_3">Where can I get a WAVE NFT?</label>
+              <input
+                id="checkbox_3"
+                class="questions__list_checkbox"
                 type="checkbox"
                 name="checkbox"
                 value=""
               />
-            </dt>
-            <dd>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </dd>
-          </dl>
+            </div>
+            <div class="questions__list_footer">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+          </div>
         </div>
         <!-- questions PART-->
         <!-- team PART-->
@@ -641,7 +657,9 @@
               Join Discord
             </a>
           </div>
-          <img class="discord__join_img" src="img/discord_join.png" alt="" />
+          <div class="discord__img">
+            <img src="img/discord_join.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -649,67 +667,70 @@
     <!-- footer PART-->
     <div class="footer">
       <div class="container">
-        <div class="footer-logo footer__col footer__col_1">
-          <img class="meta-logo" src="img/meta_logo.png" alt="Meta" />
-          <p>2022 All rights reserved</p>
-        </div>
+        <div class="footer__wrapper">
+          <div class="footer-logo footer__col footer__col_1">
+            <img class="meta-logo" src="img/meta_logo.png" alt="Meta" />
+            <p>2022 All rights reserved</p>
+          </div>
 
-        <div class="footer__col footer__col_2">
-          <a class="navigation-item" href="#">Wave NFTs</a>
-          <a class="navigation-item" href="#">Stories</a>
-          <a class="navigation-item" href="#">Contact</a>
-        </div>
+          <div class="footer__col footer__col_2">
+            <a class="navigation-item" href="#">Wave NFTs</a>
+            <a class="navigation-item" href="#">Stories</a>
+            <a class="navigation-item" href="#">Contact</a>
+          </div>
 
-        <div class="footer__col footer__col_3">
-          <a class="navigation-item" href="#">Licencing</a>
-          <a class="navigation-item" href="#">Style Guide</a>
-          <a class="navigation-item" href="#">Changelog</a>
-        </div>
+          <div class="footer__col footer__col_3">
+            <a class="navigation-item" href="#">Licencing</a>
+            <a class="navigation-item" href="#">Style Guide</a>
+            <a class="navigation-item" href="#">Changelog</a>
+          </div>
 
-        <div class="footer__col footer__col_4">
-          <p href="#">Powered by Webflow</p>
-          <p href="#">Developed by Anastasiia G.</p>
-        </div>
+          <div class="footer__col footer__col_4">
+            <p href="#">Powered by Webflow</p>
+            <p href="#">Developed by Anastasiia G.</p>
+          </div>
 
-        <div class="footer__col footer__col_5 society__links">
-          <a
-            href="https://twitter.com/?lang=ru"
-            class="society twitter"
-            src="img/twitter.png"
-            alt="twitter"
-          ></a>
+          <div class="footer__col footer__col_5 society__links">
+            <a
+              href="https://twitter.com/?lang=ru"
+              class="society twitter"
+              src="img/twitter.png"
+              alt="twitter"
+            ></a>
 
-          <a
-            target="_blank"
-            href="https://discord.com"
-            class="society discord"
-            src="img/discord.pn
+            <a
+              target="_blank"
+              href="https://discord.com"
+              class="society discord"
+              src="img/discord.pn
 
             g"
-            al
-            target="_blank"
-            t="discord"
-          ></a>
+              al
+              target="_blank"
+              t="discord"
+            ></a>
 
-          <a
-            href="https://www.youtube.com"
-            class="society youtube"
-            src="img/youtube.png"
-            alt="youtube"
-          >
-          </a>
+            <a
+              href="https://www.youtube.com"
+              class="society youtube"
+              src="img/youtube.png"
+              alt="youtube"
+            >
+            </a>
 
-          <a
-            href="https://web.telegram.org/z/"
-            class="society telegram"
-            target="_blank"
-            src="img/telegram.png"
-            alt="telegram"
-          ></a>
+            <a
+              href="https://web.telegram.org/z/"
+              class="society telegram"
+              target="_blank"
+              src="img/telegram.png"
+              alt="telegram"
+            ></a>
+          </div>
         </div>
       </div>
     </div>
     <!-- footer PART-->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/story.js"></script>
+    <script type="text/javascript" src="js/questions.js"></script>
   </body>
 </html>

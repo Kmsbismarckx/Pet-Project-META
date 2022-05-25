@@ -1,29 +1,35 @@
 .questions {
   display: flex;
+  justify-content: space-between;
   margin-left: 99px;
   margin-bottom: 108px;
+  max-width: 1160px;
 }
 
-.questions_left-side {
+.questions__left-side {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   max-width: 360px;
-  margin-right: 220px;
+  margin-right: 10px;
 }
 
-.questions_left-side span {
+.questions__left-side span {
   color: rgba(168, 168, 168, 1);
 }
-
-.questions_left-side h2 {
+.questions__left-side h2 {
+  margin-top: 0;
   margin-bottom: 51px;
   width: inherit;
 }
 
-.questions_list {
+.questions__list {
   background-color: rgba(34, 34, 34, 1);
-  max-width: 580px;
+  width: 580px;
+  align-self: flex-start;
 }
 
-.questions_list dt {
+.questions__list_header {
   display: flex;
   justify-content: space-between;
   font-family: "DM Mono";
@@ -31,11 +37,74 @@
   margin-top: 24px;
   margin-bottom: 24px;
   margin-right: 21px;
+  label {
+    margin: 0;
+  }
 }
 
-.questions_list dd {
+.questions__list_footer {
+  display: none;
   font-size: 12px;
   margin-bottom: 29px;
   margin-left: 31px;
   margin-right: 35px;
+}
+
+.questions__list_footer.active {
+  display: block;
+}
+
+.questions__list_checkbox {
+  visibility: hidden;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  //animation: back-rotate linear 0.35s forwards;
+}
+
+.questions__list_checkbox::after {
+  visibility: visible;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../img/arrow.svg);
+}
+
+.questions__list_checkbox:hover {
+  animation: jiggle 0.3s linear infinite forwards;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(25deg);
+  }
+  33% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+.questions__list_checkbox:checked {
+  animation: rotate linear 0.35s forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes back-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -1,13 +1,13 @@
 .discord__info {
   display: flex;
   justify-content: space-between;
-  margin-left: 136px;
-  margin-right: 136px;
+  align-items: center;
+  margin: 0 9.4%;
 }
 
 .discord__join {
+  align-self: center;
   max-width: 483px;
-  margin-top: 146px;
 }
 
 .discord__join span {

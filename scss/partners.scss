@@ -1,19 +1,30 @@
 .partners {
-  margin-bottom: 245px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 17%;
 }
 
 .partners__logoholder {
   display: grid;
-  grid-template-columns: 322px 322px 322px;
+  grid-template-columns: repeat(auto-fill, 322px);
   grid-row-gap: 61px;
   grid-column-gap: 86px;
   margin-left: 52.95px;
+  max-width: 100%;
+  align-self: stretch;
+  align-self: center;
+  .logoholder_item {
+    width: 100%;
+  }
 }
-
 .partners_title {
   font-family: "DM Mono";
   font-size: 11px;
   line-height: 12px;
+  margin-top: 0;
   margin-bottom: 51px;
   text-align: center;
   text-transform: uppercase;

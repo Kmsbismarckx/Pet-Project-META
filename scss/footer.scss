@@ -1,9 +1,12 @@
-.footer .container {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-left: 9.7%;
+  padding-right: 9.7%;
 }
+
 .footer {
-  padding: 100px 140px 120px 140px;
+  padding: 100px 0 120px;
   margin-top: 118px;
   background-color: rgba(66, 0, 106, 1);
   height: 138px;
@@ -12,7 +15,13 @@
 .footer__col {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 10px;
+}
+
+.footer__col:last-child {
+  margin-right: 0;
 }
 
 .footer__col p {

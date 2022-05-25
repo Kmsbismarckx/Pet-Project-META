@@ -1,16 +1,21 @@
 .wave-collection {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 113px;
+  max-width: 1160px;
+  max-height: 545px;
 }
 
 .wave-collection__item {
   margin-left: 40px;
+  margin-right: 10px;
 }
 
 .wave-collection__item h2 {
   width: 351px;
   margin: 0;
-  margin-left: 106px;
+  margin-left: 66px;
   margin-bottom: 42px;
 }
 
@@ -20,7 +25,10 @@
 
 .wave-collection__description {
   max-width: 551px;
-  margin-left: 161px;
+}
+.wave-collection__description .wave-collection__text {
+  max-height: 300px;
+  overflow: scroll;
 }
 
 .blockquote {
@@ -30,6 +38,7 @@
   color: rgb(141, 253, 27);
   padding-left: 22px;
   margin: 0;
+  margin-bottom: 10px;
   border-left: 2px solid rgb(141, 253, 27);
 }
 

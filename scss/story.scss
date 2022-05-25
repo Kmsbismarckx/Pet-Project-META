@@ -1,7 +1,7 @@
 @import "config";
 
 .story {
-  width: 1160px;
+  width: 100%;
   height: 645px;
   margin-bottom: 120px;
 }
@@ -16,6 +16,7 @@
 
 .story-main {
   display: flex;
+  width: 100%;
 }
 
 .story-list {
@@ -32,8 +33,9 @@
 }
 
 .story-list__item {
+  font-family: "DM Mono";
   display: block;
-  width: 282px;
+  width: 100%;
   height: 72px;
   line-height: 72px;
   text-align: center;
@@ -52,10 +54,8 @@
   display: flex;
   justify-content: left;
   background-color: rgba(34, 34, 34, 1);
-  width: 818px;
-  height: 478px;
-  padding-top: 60px;
-  padding-left: 60px;
+  max-width: 878px;
+  padding: 60px;
 }
 
 .story-list__item_description {
@@ -73,5 +73,5 @@
 }
 
 .story-list__item_description_sidebar {
-  width: 530px;
+  max-width: 530px;
 }

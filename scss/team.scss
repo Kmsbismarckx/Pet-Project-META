@@ -13,6 +13,10 @@
   grid-row-gap: 60px;
   justify-content: center;
   text-align: center;
+  .society__links {
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .team__people_item {

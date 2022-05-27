@@ -26,8 +26,6 @@
   max-width: 551px;
 }
 .wave-collection__description .wave-collection__text {
-  max-height: 300px;
-  overflow: scroll;
   margin-bottom: 30px;
 }
 

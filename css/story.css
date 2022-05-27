@@ -50,15 +50,14 @@
 }
 
 .story-list__item_description {
-  display: flex;
+  display: none;
   justify-content: left;
   background-color: rgb(34, 34, 34);
   max-width: 878px;
   padding: 60px;
 }
-
-.story-list__item_description {
-  display: none;
+.story-list__item_description p {
+  margin-top: 0;
 }
 
 .story-list__item_description.active {

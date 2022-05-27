@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono&family=Inter&display=swap");
 @media (max-width: 1440px) {
   .company-info img {
     width: 100%;
+  }
+
+  .header__burger {
+    display: none;
   }
 
   .discord__info img {
@@ -9,17 +14,20 @@
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 992px;
   }
 
-  .header {
+  .society__links {
+    grid-template-columns: repeat(2, 36px);
+  }
+
+  .header .header__wrapper {
     padding-bottom: 0;
     height: 100px;
     align-items: center;
   }
-  .header .society {
-    margin-bottom: 5px;
-    margin-top: 5px;
+  .header .header__burger {
+    display: none;
   }
 
   .wrapper__item div:first-child {
@@ -30,14 +38,12 @@
     margin-right: 0;
   }
 
+  .story {
+    height: auto;
+  }
   .story .story-list__item_description {
-    max-height: 538px;
-    overflow: hidden;
+    margin-bottom: 20px;
   }
-  .story .story-list__item_description_sidebar {
-    overflow: scroll;
-  }
-
   .partners__logoholder {
     margin-left: 0;
   }
@@ -62,21 +68,137 @@
   .questions .questions__left-side h2 {
     align-self: center;
   }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer .footer__wrapper {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .footer .footer__col_4 {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
+  body {
+    font-size: 80%;
+  }
+  body h1 {
+    font-size: 40px;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  .header .header__wrapper {
+    padding: 0;
+    position: relative;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .header .header__logo {
+    position: relative;
+    z-index: 3;
+  }
+  .header .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.5s ease;
+  }
+  .header .header__burger.active::before {
+    transition: all 1s;
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header .header__burger.active::after {
+    transition: all 0.5s ease;
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header .header__burger.active span {
+    transform: scale(0);
+    transition: all 0.5s ease;
+  }
+  .header .header__burger::before,
+.header .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  .header .header__burger::before {
+    top: 0;
+  }
+  .header .header__burger::after {
+    bottom: 0;
+  }
+  .header .header__navigation {
+    position: fixed;
+    display: block;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: #5ab002;
+    padding: 70px 10px 10px 10px;
+    z-index: 2;
+  }
+  .header .header__navigation .navigation-item {
+    margin-bottom: 20px;
+  }
+  .header .society__links {
+    display: none;
+  }
+  .header .header__navigation.active {
+    transition: 0.5s ease all;
+    top: 0;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 3;
+  }
+
   .container {
     max-width: none;
   }
 
-  .company-info {
-    flex-direction: column;
+  .wrapper__item div {
+    font-size: 80%;
   }
 
-  .header {
-    justify-content: space-between;
-  }
-  .header .society__links {
+  .team .wrapper__item div:last-child {
     display: none;
+  }
+
+  .company-info {
+    flex-direction: column;
   }
 
   .wave-collection {
@@ -103,8 +225,10 @@
     flex-direction: column;
     padding: 10px;
     align-items: center;
+    max-height: none;
   }
   .story-list__item_description img {
+    padding: 0;
     margin-bottom: 10px;
   }
 
@@ -127,6 +251,9 @@
     max-width: 360px;
   }
 
+  .roadmap {
+    margin-bottom: 100px;
+  }
   .roadmap .roadmap-list {
     align-items: center;
     max-width: 540px;
@@ -163,7 +290,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   .discord__info .discord__join p {
     align-self: center;
@@ -171,11 +298,25 @@
   }
 
   .footer {
-    margin-top: 10px;
+    display: flex;
+    height: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
   }
-  .footer .footer__col_2,
-.footer .footer__col_3,
-.footer .footer__col_5 {
+  .footer .container {
+    width: 100%;
+  }
+  .footer .footer__wrapper {
+    flex-wrap: wrap;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer .footer__wrapper .footer__col p {
+    font-size: 11px;
+  }
+  .footer .footer__wrapper .footer__col_2 {
     display: none;
   }
 }

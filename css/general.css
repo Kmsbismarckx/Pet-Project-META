@@ -53,6 +53,12 @@ img {
   height: 32px;
 }
 
+.society__links {
+  display: grid;
+  grid-template-columns: repeat(4, 36px);
+  grid-gap: 10px;
+}
+
 .society {
   display: inline-block;
   font-size: 0;

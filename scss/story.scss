@@ -51,15 +51,17 @@
 }
 
 .story-list__item_description {
-  display: flex;
+  display: none;
   justify-content: left;
   background-color: rgba(34, 34, 34, 1);
   max-width: 878px;
   padding: 60px;
+  p {
+    margin-top: 0;
+  }
 }
 
 .story-list__item_description {
-  display: none;
 }
 
 .story-list__item_description.active {

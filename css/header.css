@@ -1,18 +1,12 @@
-.header {
+.header .header__wrapper {
+  height: 86px;
+  max-width: 1440px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  max-width: 1440px;
-  height: 86px;
   padding-bottom: 14px;
   padding-left: 9.75%;
   padding-right: 9.75%;
-}
-.header .society__links {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .header .header__logo {
@@ -25,25 +19,16 @@
   text-align: center;
 }
 
-.header .header__navigation a {
-  display: inline-block;
-  margin-right: 40px;
+.header__navigation {
+  display: flex;
 }
 
-.header .header__navigation a:last-child {
-  margin-right: 0;
+.header .header__navigation a {
+  margin-right: 40px;
 }
 
 .header .society__links {
   margin-left: auto;
-}
-
-.society__links .society {
-  margin-right: 12px;
-}
-
-.society__links .society:last-child {
-  margin-right: 0;
 }
 
 .twitter {
@@ -51,19 +36,19 @@
 }
 
 .discord {
-  background: white url("/img/discord.png") no-repeat 50%;
+  background: white url("../img/discord.png") no-repeat 50%;
 }
 
 .youtube {
-  background: white url("/img/youtube.png") no-repeat 50%;
+  background: white url("../img/youtube.png") no-repeat 50%;
 }
 
 .telegram {
-  background: white url("/img/telegram.png") no-repeat 50%;
+  background: white url("../img/telegram.png") no-repeat 50%;
 }
 
 .linked_in {
-  background: white url("/img/linked_in.png") no-repeat 50%;
+  background: white url("../img/linked_in.png") no-repeat 50%;
 }
 
 /**/

@@ -126,7 +126,7 @@
     }
 
     .header__burger.active::before {
-      transition: all 1s;
+      transition: all 0.5s;
       transform: rotate(45deg);
       top: 9px;
     }

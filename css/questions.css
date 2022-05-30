@@ -41,6 +41,8 @@
 }
 .questions__list_header label {
   margin: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .questions__list_footer {

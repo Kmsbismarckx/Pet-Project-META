@@ -1,12 +1,13 @@
-let list = document.querySelector(".story-list");
+let storyMain = document.querySelector(".story-main");
+let list = storyMain.querySelector(".story-list");
 let listItems = list.querySelectorAll(".story-list__item");
-let listItemsDescriptions = document.querySelectorAll(
+let listItemsDescriptions = storyMain.querySelectorAll(
   ".story-list__item_description"
 );
 
 function addClickHandler(item, descr) {
-  item.addEventListener("click", function () {
-    let temp = document.querySelectorAll(".active");
+  item.addEventListener("click", function() {
+    let temp = storyMain.querySelectorAll(".active");
     for (let i = 0; i < temp.length; i++) {
       temp[i].classList.remove("active");
     }

@@ -62,6 +62,7 @@ img {
 
 .society {
   display: inline-block;
+  transition: all 0.1s ease;
   font-size: 0;
   width: 36px;
   height: 36px;
@@ -77,10 +78,19 @@ img {
   box-shadow: 0px 0px 1px 2px darken($green, 20%);
 }
 
+.button {
+  transition: all 0.1s ease;
+}
+
 .button:hover {
   box-shadow: 0px 0px 5px 5px white;
-  color: white;
   transform: scale(1.05);
+}
+
+.button:active {
+  box-shadow: 0px 0px 5px 5px darken(white, 20%);
+  background-color: darken($green, 10%);
+  transform: scale(0.98);
 }
 
 .discord__join_button:hover {
@@ -98,15 +108,13 @@ img {
   }
 }
 
-.button:active {
-  box-shadow: 0px 0px 5px 5px darken(white, 20%);
-  background-color: darken($green, 10%);
-  transform: scale(0.98);
-}
-
 .wave-collection__button:hover {
   background-color: $green;
   color: black;
+}
+
+.navigation-item {
+  transition: all 0.1s ease;
 }
 
 .navigation-item:hover {

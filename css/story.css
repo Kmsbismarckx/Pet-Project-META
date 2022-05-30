@@ -28,12 +28,15 @@
 }
 
 .story-list__item.active {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .story-list__item {
   font-family: "DM Mono";
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 72px;
   line-height: 72px;

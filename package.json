@@ -1,0 +1,36 @@
+{
+  "name": "pet-project-meta",
+  "version": "1.0.0",
+  "description": "pet project meta",
+  "private": true,
+  "scripts": {
+    "dev": "npx webpack --mode development",
+    "build": "npx webpack --mode production",
+    "watch": "npx webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kmsbismarckx/pet-project-meta.git"
+  },
+  "keywords": [
+    "Meta"
+  ],
+  "author": "Kliment <klimentmaslennikov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kmsbismarckx/pet-project-meta/issues"
+  },
+  "homepage": "https://github.com/Kmsbismarckx/pet-project-meta#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

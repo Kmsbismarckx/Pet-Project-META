@@ -1,5 +1,6 @@
-let checkbox = document.querySelectorAll(".questions__list_checkbox");
-let text = document.querySelectorAll(".questions__list_footer");
+//export default function() {
+const checkbox = document.querySelectorAll(".questions__list_checkbox");
+const text = document.querySelectorAll(".questions__list_footer");
 
 function addCheckHandler(item, toChange) {
   item.addEventListener("change", function() {
@@ -10,3 +11,4 @@ function addCheckHandler(item, toChange) {
 for (let i = 0; i < checkbox.length; i++) {
   addCheckHandler(checkbox[i], text[i]);
 }
+//}

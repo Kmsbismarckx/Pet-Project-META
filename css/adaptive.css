@@ -200,6 +200,9 @@
   .company-info {
     flex-direction: column;
   }
+  .company-info .company-info__item {
+    margin: 0;
+  }
 
   .wave-collection {
     flex-direction: column;
@@ -221,13 +224,16 @@
     width: 100%;
   }
 
-  .story-list__item_description {
+  .story {
+    margin-bottom: 25px;
+  }
+  .story .story-list__item_description {
     flex-direction: column;
     padding: 10px;
     align-items: center;
     max-height: none;
   }
-  .story-list__item_description img {
+  .story .story-list__item_description img {
     padding: 0;
     margin-bottom: 10px;
   }
@@ -253,6 +259,13 @@
 
   .roadmap {
     margin-bottom: 100px;
+  }
+  .roadmap .roadmap_img {
+    margin-bottom: 75px;
+  }
+  .roadmap h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .roadmap .roadmap-list {
     align-items: center;

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6f8e7ac-f654-44de-9aa1-73fb94eb1954" name="Changes" comment="delete files" />
+    <list default="true" id="f6f8e7ac-f654-44de-9aa1-73fb94eb1954" name="Changes" comment="update files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/adaptive.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/adaptive.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/questions.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/questions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/questions.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/questions.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/adaptive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/adaptive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/questions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/questions.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +65,7 @@
       <workItem from="1653227874320" duration="247000" />
       <workItem from="1653228195872" duration="2103000" />
       <workItem from="1653230346762" duration="3611000" />
+      <workItem from="1656765102854" duration="1428000" />
     </task>
     <task id="LOCAL-00001" summary="separate css files">
       <created>1653233695832</created>
@@ -109,7 +118,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="separate css files" />
     <MESSAGE value="delete files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete files" />
+    <MESSAGE value="update files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

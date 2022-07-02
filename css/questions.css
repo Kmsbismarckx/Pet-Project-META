@@ -28,8 +28,10 @@
   background-color: rgb(34, 34, 34);
   width: 580px;
   align-self: flex-start;
+  transition: all 0.3s ease;
 }
 
+/**/
 .questions__list_header {
   display: flex;
   justify-content: space-between;
@@ -38,6 +40,7 @@
   margin-top: 24px;
   margin-bottom: 24px;
   margin-right: 21px;
+  transition: all 0.3s ease;
 }
 .questions__list_header label {
   margin: 0;
@@ -51,10 +54,12 @@
   margin-bottom: 29px;
   margin-left: 31px;
   margin-right: 35px;
+  transition: all 0.3s ease;
 }
 
 .questions__list_footer.active {
   display: block;
+  transition: all 0.3s ease;
 }
 
 .questions__list_checkbox {

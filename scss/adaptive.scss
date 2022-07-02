@@ -330,14 +330,14 @@
       }
     }
 
-    .discord__join_button: {
+    .discord__join_button {
       align-self: center;
     }
   }
 
   .footer {
     display: flex;
-    height: none;
+    height: unset;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;

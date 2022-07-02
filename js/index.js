@@ -14,7 +14,6 @@ import "/css/wave-collection.css";
 import "/css/general.css";
 import "/css/adaptive.css";
 
-import html from "../index.html";
 import initMenu from "./burger.js";
 import initQuestions from "./questions.js";
 import initStory from "./story.js";
